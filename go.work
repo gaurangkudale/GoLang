@@ -3,6 +3,8 @@ go 1.20
 use (
 	./arrays
 	./conversion
+	./functions
+	./loops
 	./myStructs
 	./mymaps
 	./mypointers
