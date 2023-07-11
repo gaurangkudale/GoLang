@@ -35,11 +35,3 @@ func addition (valOne int, valTwo int) int {
 	return valOne + valTwo
 }
 
-func twoSum(nums []int, target int) []int {
-    for i, v := range nums {
-        for i = 0; i <= len(nums)-1; i++{
-			fmt.Println(i)
-		}
-    }
-    return nums[]
-}
