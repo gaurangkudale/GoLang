@@ -1,10 +1,11 @@
 package main
 
 import (
-    "fmt"
+	"bufio"
+	"fmt"
+	"os"
 )
 
-type maxInt uint64
 
 type Person struct {
     name string
@@ -18,10 +19,26 @@ func newPerson(name string) *Person {
 }
 
 func main() {
-    var mxIUNT maxInt = 4294967296
+    mxIUNT := 4294967296
     fmt.Println(mxIUNT)
-
     fmt.Println(Person{"bob", 20})
     fmt.Println(newPerson("Gk"))
     fmt.Println(&Person{"gaurang", 23})
+	a, j, z := 42, 2701, 0
+	fmt.Println(a, j, z)
+	fmt.Println(a)
+
+
+	//Input from user
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Enter text: ")
+
+	txt, err := reader.ReadString('\n')
+	
+	fmt.Print("Your txt : ",txt, err)
+	if err != nil {
+		fmt.Println("Error reading input: ", err)
+		return
+		
+	}
 }
