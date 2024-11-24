@@ -11,7 +11,6 @@ use (
 	./mypointers
 	./mytime
 	./revision
-	./slices
 	./switch-case
 	./variables
 )
