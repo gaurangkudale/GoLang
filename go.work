@@ -1,8 +1,9 @@
-go 1.20
+go 1.21.5
 
 use (
 	./arrays
 	./conversion
+	./examples
 	./functions
 	./loops
 	./myStructs
